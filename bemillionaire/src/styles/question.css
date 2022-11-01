@@ -1,0 +1,112 @@
+body{
+    background-image: url("https://1.bp.blogspot.com/-FjF-zCnXkBE/YTnwTwjGk-I/AAAAAAAABFU/op04qUdx8xM5QA8Vh4oY6J-SKpagPuo2gCLcBGAsYHQ/s1920/plain-black-wallpaper.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.question-container{
+    width: 70%;
+    height: 100vh;
+    color:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5rem;
+    padding-top: 20rem;
+}
+h1{
+    color:white;
+}
+.answers{
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}   
+.answer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216);
+    margin: 3px;
+    width: 45%;
+    font-size: 24px;
+    cursor: pointer;
+}
+.modal-body{
+    background-color: black;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}   
+
+.answer.correct{
+    animation: correct 3s ease forwards;
+}
+.answer.wrong{
+    animation: wrong 3s ease forwards;
+}
+@keyframes correct{
+    
+    100% {
+        background-color: green;
+    }
+}
+@keyframes wrong{
+    0% {
+        background-color: rgb(108, 108, 108);
+    }
+    80% {
+        background-color: red;
+    }
+}
+
+
+@media screen and (max-width:1000px){
+   
+    .question-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .answers{
+        padding: 0;
+        margin: 0;
+    }
+    .answers{
+        padding: 2rem 0 2rem 0;
+        margin: 0;
+    }
+    .question{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .question h1{
+        font-size: 20px;
+        padding: 3rem;
+    }
+    .answers{
+        padding: 1rem;
+    }
+    .answer{
+        font-size: 18px;
+        height: 70px;
+        
+        
+    }
+    .mobile-info{
+        margin-bottom: 2rem;
+        font-size: 20px;
+        text-indent: 1rem;
+        text-align: start;
+        color:white;
+        width: 100%;
+    }
+  }
